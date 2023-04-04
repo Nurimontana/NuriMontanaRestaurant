@@ -1,0 +1,322 @@
+
+            *,
+            *::after,
+            *::after{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                border: 0;
+                font-size: x-small;
+                font-family: 'Poppins' , sans-serif;
+            }
+            
+            a,
+            a::after,
+            a::before{
+                text-decoration: none;
+                outline: none;
+                border: none;
+            }
+            ul,
+            li{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: smaller;
+            }
+            section,
+            span,
+            p{
+                margin: 0;
+                padding: 0;
+                outline: none;  
+                border: none;
+            }
+            .container{
+                max-width: 1170px;
+                margin:0 auto ;
+                padding: 0 30px;
+            }
+            .header{
+                background-image: url(../image/imgim.jpg);
+                background-position: center;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 100vh;
+              
+            }
+            .header-navbar{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px 0;
+            }
+            .header-logo{
+                font-size: 10px;
+                letter-spacing: 1px;
+                border-top: 15px solid #fff;
+                border-radius: 10px;
+                border-bottom: 15px solid #fff;
+                position: relative;
+                right: 150px;
+                
+                
+            }
+            
+            ul{
+                display: flex;
+            }
+            li{
+                margin-top: 25px;
+                margin-left: 75px;
+            }
+            a{
+                color: rgb(240, 235, 227);
+                font-weight: bold;
+                font-size: 15px;
+                padding: 10px;
+            }
+            .header-text{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-30%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            h1{
+                font-size: 8rem;
+                font-weight: 100;
+                line-height: 0.4;
+                letter-spacing: 2px;
+                font-family: 'Herr Von Muellerhoff', cursive;
+                color: bisque;
+            }
+            h2{
+                color: bisque;
+                font-size: 35px;
+            }
+            .firsth-leter{
+                font-size: 6.5rem;
+                font-family: 'Herr Von Muellerhoff', cursive;
+                color: bisque;
+            }
+            h3{
+                margin-bottom: 15px;
+                font-size: 10px;
+                color: antiquewhite;
+            }
+            .btn-pasta{
+                display: block;
+                background-color: #5b2a02;
+                color: #fff;
+                padding: 5px 7px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .btn-pasta::after{
+                content: "NURIMONTANA";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color:antiquewhite;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .5s;
+                color:#813d05
+            }
+            .btn-pasta:hover:after{
+                top: 0;
+            }
+            
+
+          
+
+        
+                
+            
+            <!--about-->
+            #about{
+                margin: 250px;
+            }
+            .about{
+                margin-bottom: 150px;
+            }
+            .about-title{
+                margin: 60px 0;
+                
+            }
+            .about-title h2{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                color: #5b2a02;
+                font-size: 40px;
+                font-weight: 800;
+            }
+            .about-title h2::after{
+                content: "";
+                width: 30px;
+                height: 3px;
+                background-color: #5b2a02;
+                margin: 0 auto;
+                display: block;
+                margin-top: 10px;
+            }
+            .about-content{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .about-img{
+                width: 40%;
+            }
+            .about-img img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .content-text{
+                width: 40%;
+                 align-items: center;
+            }
+            h4{
+                margin-bottom: 5px;
+                text-align: center;
+                font-size: 45px;
+                color: #5b2a02;
+                font-family:'Her Von Mullerhoff' cursive;
+                letter-spacing: 0.5rem;
+                font-weight: 100;
+            }
+            .content-text p{
+                font-size: 20px;
+                text-align: center;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            /*portfolyo*/
+            .portfolio{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .portfolio-item{
+                width: 25%;
+                height: 300px;
+                overflow: hidden;
+                position: relative;
+            }
+            .portfolio-item img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.5s;
+            }
+            .overlay{
+                width: 100%;
+                height: 100%;
+                background-color: #813d05;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                opacity: 0.8;
+                color: #fff;
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.5s;
+            }
+            .portfolio-item:hover .overlay{
+                top: 0;
+            }
+            .portfolio-item:hover  img{
+                transform: scale(1.5);
+            }
+            /*contact*/
+            .contact{
+                padding: 10px 0;
+                height: 600px;
+            }
+            .contact h2{
+                width: 100%;
+                text-align: center;
+                color: #5b2a02;
+                margin: 0 auto;
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                
+            }
+            .contact h2::after{
+                content: "";
+                width: 30px;
+                height: 3px;
+                background-color: #5b2a02;
+                margin: 0 auto;
+                display: block;
+                margin-top: 10px;
+            }
+            .contact-content{
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .contact-item{
+                display: flex;
+                align-items: center;
+                flex-basis: 33%;
+                margin-bottom: 100px;
+                flex-direction: column;
+            }
+            .footer h2{
+                width: 100%;
+                text-align: center;
+                color: #5b2a02;
+                margin: 0 auto;
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                padding: 60px 0;
+            }
+            .footer h2::after{
+                content: "";
+                width: 30px;
+                height: 3px;
+                background-color: #5b2a02;
+                margin: 0 auto;
+                display: block;
+                margin-top: 10px;
+            }
+            .footer{
+                background-color: black;
+                height: 350px;
+            }
+            .footer-copyright{
+                color: #fff;
+                text-align: center;
+                flex-basis: 55%;
+                line-height: 2px;
+                font-size: 30px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
+          
+            .header-menu{
+                border-radius: 10px;
+                position: relative;
+                left: 50px;
+                text-align: center;
+
+            }
+
+
+            
